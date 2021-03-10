@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import SwiperCore, { A11y, Navigation, Pagination, Scrollbar } from 'swiper/core';
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 @Component({
   selector: 'app-banner',
@@ -17,14 +17,13 @@ export class BannerComponent implements OnInit {
     'assets/images/banner-3.jpg'
   ];
 
-  onSwiper(swiper: any){
+  onSwiper(swiper: any): void {
     console.log(swiper);
   }
 
-  onSlideChange(){
+  onSlideChange(): void {
     console.log('slide change');
   }
-  
   constructor() { }
 
   ngOnInit(): void {
