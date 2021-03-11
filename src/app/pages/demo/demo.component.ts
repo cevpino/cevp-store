@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent implements OnInit {
-  
+
   title = 'cevp-store';
 
   items = ['Carlos', 'Jose', 'Miguel'];
@@ -14,7 +14,7 @@ export class DemoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    //code
+    // code
   }
 
   addItem(): void {

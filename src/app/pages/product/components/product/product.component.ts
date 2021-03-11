@@ -7,7 +7,7 @@ import { Component,
     SimpleChanges,
     OnInit } from '@angular/core';
 
-import { Product } from '../../model/product.model';
+import { Product } from '../../../../model/product.model';
 
 @Component({
     selector: 'app-product',
@@ -24,7 +24,7 @@ export class ProductComponent implements OnChanges, OnInit {
     productClicked: EventEmitter<any> = new EventEmitter();
 
     today = new Date();
-    
+
     constructor() {
         console.log('1. constructor');
     }
