@@ -1,0 +1,23 @@
+<input type="text" [(ngModel)]="title">
+{{ title }}
+
+<div *ngIf="title === 'cesar'">
+  Este es un div que se muestra al ser cierto el if
+</div>
+
+<div [ngSwitch]="title">
+  <p *ngSwitchCase="'Rojo'">este es Rojo</p>
+  <p *ngSwitchCase="'Azul'">este es Azul</p>
+  <p *ngSwitchCase="'Cafe'">este es Cafe</p>
+  <p *ngSwitchDefault>No hay color</p>
+</div>
+
+<button (click)="addItem()">Add item</button>
+
+<ul>
+  <li *ngIf="items.length === 0">La lista esta vacia</li>
+  <li *ngFor="let nombre of items; index as i">
+    {{ nombre }} {{ i }}
+    <button (click)="deleteItem(i)">delete</button>
+  </li>
+</ul>

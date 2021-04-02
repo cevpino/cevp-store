@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <div class="container" fxLayout
+        fxLayout.xs="column"
+        fxLayoutAlign="center"
+        fxLayoutGap="100px"
+        fxLayoutGap.xs="0">
+        <div class="item item-1">
+            <nav>
+                <a mat-button routerLink="/home" routerLinkActive="active">Home</a>
+                <a mat-button routerLink="/products" routerLinkActive="active">Products</a>
+                <a mat-button routerLink="/contact" routerLinkActive="active">Contacts</a>
+            </nav>
+        </div>
+        <div class="item item-2" fxFlex
+        fxFlexOffset="150px"
+        fxFlexOffset.xs="0">
+            <a mat-raised-button matBadge="4" matBadgeColor="warn">
+                <mat-icon>shopping_cart</mat-icon>Carrito
+            </a>
+        </div>
+        </div>
+        
+    </mat-toolbar-row>
+</mat-toolbar>
+
